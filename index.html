@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civitech Solutions - Excelência em Engenharia Civil</title>
+    <meta name="description" content="Empresa especializada em projetos de engenharia civil com mais de x anos de experiência. Projetos residenciais, comerciais e industriais.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="smooth-scroll">
+<!-- Navbar -->
+<nav class="fixed top-0 w-full bg-white/95 navbar-blur shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <i data-lucide="building-2" class="h-8 w-8 text-blue-600"></i>
+                <span class="ml-2 text-xl font-bold text-gray-900">Civitech Solutions</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
+                <a href="#servicos" class="text-gray-700 hover:text-blue-600 transition-colors">Serviços</a>
+                <a href="#projetos" class="text-gray-700 hover:text-blue-600 transition-colors">Projetos</a>
+                <a href="#sobre" class="text-gray-700 hover:text-blue-600 transition-colors">Sobre</a>
+                <a href="#contato" class="text-gray-700 hover:text-blue-600 transition-colors">Contato</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contato" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2 transition-colors">
+                    Orçamento Grátis
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="p-2">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#inicio" class="block px-3 py-2 text-gray-700">Início</a>
+            <a href="#servicos" class="block px-3 py-2 text-gray-700">Serviços</a>
+            <a href="#projetos" class="block px-3 py-2 text-gray-700">Projetos</a>
+            <a href="#sobre" class="block px-3 py-2 text-gray-700">Sobre</a>
+            <a href="#contato" class="block px-3 py-2 text-gray-700">Contato</a>
+            <div class="px-3 py-2">
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full py-2">
+                    Orçamento Grátis
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="inicio" class="hero-bg h-screen flex items-center justify-center">
+    <div class="text-center text-white max-w-4xl mx-auto px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in whitespace-nowrap">
+            Civitech Solutions
+            <span class="block text-blue-400">Engenharia e Construção</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-200 fade-in">
+            Construção de edifícios com execução completa de projetos residenciais, comerciais e industriais, garantindo qualidade, segurança e cumprimento de prazos.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+            <a href="#contato" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-3 text-lg transition-colors flex items-center justify-center">
+                Solicitar Orçamento
+            </a>
+
+            <a href="#projetos" class="border-2 border-white text-white hover:bg-white hover:text-gray-900 rounded-full px-8 py-3 text-lg transition-colors text-center">
+                Ver Projetos
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="servicos" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Nossos Serviços</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Oferecemos soluções completas em engenharia civil para todos os tipos de projeto
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="card-hover bg-white rounded-lg shadow-lg p-6 text-center fade-in">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="home" class="h-8 w-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Residencial</h3>
+                <p class="text-gray-600">Projetos residenciais completos, desde casas até condomínios</p>
+            </div>
+
+            <div class="card-hover bg-white rounded-lg shadow-lg p-6 text-center fade-in">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="building-2" class="h-8 w-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Comercial</h3>
+                <p class="text-gray-600">Edifícios comerciais, escritórios e estabelecimentos</p>
+            </div>
+
+            <div class="card-hover bg-white rounded-lg shadow-lg p-6 text-center fade-in">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="factory" class="h-8 w-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Industrial</h3>
+                <p class="text-gray-600">Galpões industriais, fábricas e estruturas especiais</p>
+            </div>
+
+            <div class="card-hover bg-white rounded-lg shadow-lg p-6 text-center fade-in">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="wrench" class="h-8 w-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">Manutenção</h3>
+                <p class="text-gray-600">Manutenção predial e reformas estruturais</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projetos" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Projetos Realizados</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Conheça alguns dos nossos trabalhos mais recentes
+            </p>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn filter-active rounded-full px-6 py-2 transition-colors" data-filter="todos">
+                    Todos
+                </button>
+                <button class="filter-btn filter-inactive rounded-full px-6 py-2 transition-colors" data-filter="residencial">
+                    Residencial
+                </button>
+                <button class="filter-btn filter-inactive rounded-full px-6 py-2 transition-colors" data-filter="comercial">
+                    Comercial
+                </button>
+                <button class="filter-btn filter-inactive rounded-full px-6 py-2 transition-colors" data-filter="industrial">
+                    Industrial
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+            <!-- Os cards serão gerados dinamicamente pelo JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="sobre" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="slide-in-left">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                     alt="Nossa equipe" class="rounded-lg shadow-xl">
+            </div>
+
+            <div class="slide-in-right">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Sobre Nossa Empresa</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    A Civitech Solutions e Construção reúne profissionais experientes e dedicados,
+                    oferecendo serviços de engenharia civil com qualidade e inovação.
+                    Atuamos na construção de edifícios residenciais, comerciais e industriais,
+                    garantindo projetos completos e resultados de excelência.
+                </p>
+                <p class="text-lg text-gray-600 mb-8">
+                    A Civitech Solutions nasceu com o propósito de transformar a construção civil, unindo excelência e inovação.
+                    Nossa equipe apaixonada trabalha para superar expectativas, oferecendo soluções eficientes e resultados que fazem a diferença.
+                </p>
+
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i data-lucide="award" class="h-6 w-6 text-blue-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">200+</div>
+                        <div class="text-sm text-gray-600">Projetos</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i data-lucide="users" class="h-6 w-6 text-blue-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">50+</div>
+                        <div class="text-sm text-gray-600">Clientes</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i data-lucide="calendar" class="h-6 w-6 text-blue-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">x+</div>
+                        <div class="text-sm text-gray-600">Anos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">O Que Nossos Clientes Dizem</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Depoimentos reais de clientes satisfeitos com nossos serviços
+            </p>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="testimonials-scroll">
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Excelente trabalho! Superou todas as expectativas na construção da minha casa."</p>
+                    <div>
+                        <div class="font-semibold text-gray-900">Maria Silva</div>
+                        <div class="text-sm text-gray-500">Proprietária</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Profissionalismo exemplar. Entregaram o projeto comercial no prazo."</p>
+                    <div>
+                        <div class="font-semibold text-gray-900">João Santos</div>
+                        <div class="text-sm text-gray-500">Empresário</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Parceria perfeita! Trabalho técnico impecável e atenção aos detalhes."</p>
+                    <div>
+                        <div class="font-semibold text-gray-900">Ana Costa</div>
+                        <div class="text-sm text-gray-500">Arquiteta</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Confiança total. Já é o terceiro projeto que fazemos juntos."</p>
+                    <div>
+                        <div class="font-semibold text-gray-900">Carlos Oliveira</div>
+                        <div class="text-sm text-gray-500">Investidor</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Equipe altamente qualificada. Recomendo sem hesitar."</p>
+                    <div>
+                        <div class="font-semibold text-gray-900">Lucia Ferreira</div>
+                        <div class="text-sm text-gray-500">Construtora</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Inovação e qualidade em cada projeto. Parceiros de confiança."</p>
+                    <div>
+                        <div class="font-semibold text-gray-900">Roberto Lima</div>
+                        <div class="text-sm text-gray-500">Incorporador</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contato" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Pronto para começar seu projeto? Fale conosco e solicite um orçamento gratuito
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="slide-in-left">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Envie sua Mensagem</h3>
+                    <form class="space-y-6" id="contact-form">
+                        <div>
+                            <input type="text" placeholder="Seu nome completo"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   required>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Seu e-mail"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   required>
+                        </div>
+                        <div>
+                            <textarea placeholder="Descreva seu projeto ou dúvida" rows="5"
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                      required>
+                            </textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-3 transition-colors">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="slide-in-right space-y-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Informações de Contato</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-lucide="phone" class="h-6 w-6 text-blue-600 mr-4"></i>
+                            <span class="text-gray-700">(64) 99921-8198</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="mail" class="h-6 w-6 text-blue-600 mr-4"></i>
+                            <span class="text-gray-700">Civitech Solutionsengenharia@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="map-pin" class="h-6 w-6 text-blue-600 mr-4"></i>
+                            <span class="text-gray-700">Avenida Don João, Q.4 L12 - Centro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-900 mb-4">Localização</h4>
+                    <div class="bg-gray-200 h-64 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122290.973529651!2d-49.387233702620634!3d-16.6972419628057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6bd58d80867%3A0xef692bad20d2678e!2zR29pw6JuaWEsIEdP!5e0!3m2!1spt-BR!2sbr!4v1753192542042!5m2!1spt-BR!2sbr"
+                                width="600"
+                                height="450"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center mb-4">
+                    <i data-lucide="building-2" class="h-8 w-8 text-blue-400"></i>
+                    <span class="ml-2 text-xl font-bold">Civitech Solutions</span>
+                </div>
+                <p class="text-gray-400">
+                    Excelência em engenharia civil com mais de x anos de experiência no mercado.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+                <ul class="space-y-2">
+                    <li><a href="#inicio" class="text-gray-400 hover:text-white transition-colors">Início</a></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
+                    <li><a href="#projetos" class="text-gray-400 hover:text-white transition-colors">Projetos</a></li>
+                    <li><a href="#sobre" class="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+                <ul class="space-y-2">
+                    <li><span class="text-gray-400">Projetos Residenciais</span></li>
+                    <li><span class="text-gray-400">Projetos Comerciais</span></li>
+                    <li><span class="text-gray-400">Projetos Industriais</span></li>
+                    <li><span class="text-gray-400">Manutenção Predial</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <i data-lucide="phone" class="h-4 w-4 text-blue-400 mr-2 flex-shrink-0"></i>
+                        <span class="text-gray-400 flex-1">(64) 99921-8198</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i data-lucide="mail" class="h-4 w-4 text-blue-400 mr-2 flex-shrink-0"></i>
+                        <span class="text-gray-400 flex-1">Civitech Solutionsengenharia@gmail.com</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i data-lucide="house" class="h-4 w-4 text-blue-400 mr-2 flex-shrink-0"></i>
+                        <span class="text-gray-400 flex-1">Avenida Don João, Q.4 L12 - Centro</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mr-2 flex-shrink-0"></i>
+                        <span class="text-gray-400 flex-1">Goiânia, GO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+            <p class="text-gray-400">© 2024 Civitech Solutions. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float">
+    <button onclick="window.open('https://wa.me/5511999999999', '_blank')"
+            class="bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+        <i data-lucide="message-circle" class="h-8 w-8"></i>
+    </button>
+</div>
+
+<!-- Project Modal -->
+<div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="sticky top-0 bg-white border-b p-4 flex justify-between items-center">
+            <h2 id="modal-title" class="text-2xl font-bold text-gray-900"></h2>
+            <button id="close-modal" class="text-gray-500 hover:text-gray-700">
+                <i data-lucide="x" class="h-6 w-6"></i>
+            </button>
+        </div>
+
+        <div class="p-6">
+            <!-- Image Gallery -->
+            <div class="mb-6">
+                <div class="relative">
+                    <img id="modal-main-image" src="/placeholder.svg" alt="" class="w-full h-64 md:h-96 object-cover rounded-lg">
+                    <button id="prev-image" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+                        <i data-lucide="chevron-left" class="h-4 w-4"></i>
+                    </button>
+                    <button id="next-image" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+                        <i data-lucide="chevron-right" class="h-4 w-4"></i>
+                    </button>
+                </div>
+                <div id="image-thumbnails" class="flex gap-2 mt-4 overflow-x-auto"></div>
+            </div>
+
+            <!-- Project Info Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Informações do Projeto</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Área:</span>
+                            <span id="modal-area" class="font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Duração:</span>
+                            <span id="modal-duration" class="font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Localização:</span>
+                            <span id="modal-location" class="font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Cliente:</span>
+                            <span id="modal-client" class="font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Ano:</span>
+                            <span id="modal-year" class="font-medium"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Características</h3>
+                    <ul id="modal-features" class="space-y-2"></ul>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">Descrição Completa</h3>
+                <p id="modal-description" class="text-gray-600 leading-relaxed"></p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center pt-4 border-t">
+                <button id="prev-project" class="flex items-center text-blue-600 hover:text-blue-700">
+                    <i data-lucide="chevron-left" class="h-4 w-4 mr-1"></i>
+                    Projeto Anterior
+                </button>
+                <span id="project-counter" class="text-gray-500 text-sm"></span>
+                <button id="next-project" class="flex items-center text-blue-600 hover:text-blue-700">
+                    Próximo Projeto
+                    <i data-lucide="chevron-right" class="h-4 w-4 ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
